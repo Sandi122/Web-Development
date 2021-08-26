@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" ></script>
+   
+
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a href=""><img src="images/IMG-20200707c.jpg"></a>
+            <nav-links class="link" id="navLinks">
+                 <i class="fas fa-times-circle" onclick="hideMenu()" ></i>
+                 
+                 <ul>
+                    <li><a href="project1.html"> HOME</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="Contact_Us.html">Contact Us</a></li>
+                </ul>
+                 
+            </nav-links>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-block">
+             <h1> Gallery </h1>
+             
+        </div> 
+         
+        
+    </header>
+     
+    <div class="Images">
+        <div id="carouselExampleIndicators" class="slider carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/M.S.jpg" class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="images/IMG-20200707c.jpg" class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="images/M.D_pic.jpg" class="d-block w-100" >
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
+
+
+
+
+
+    <footer>
+        <p>You can follow us at </p>
+        <div  class="icons"> 
+            <i class="fab fa-2x fa-facebook-square"></i>
+            <i class="fab fa-2x fa-instagram" ></i>
+            <i class="fab fa-2x fa-twitter" ></i>
+
+            <p> Copyright@namkinfoods.com </p>
+        </div>
+        
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+header{
+    min-height: 100vh;
+    width: 100%;
+   background-image:linear-gradient(rgba(192, 192, 192, 0.5), rgba(192, 192, 192, 0.5)), 
+   url('file:///C:/Users/sandip%20raj/Desktop/UI%20classes%20github/Web-Development/Sandip%20Raj/images/Logo.png');
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+}
+nav{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+}
+nav-links{
+    flex: 1;
+    text-align: right;
+}
+nav .link i {
+    display: none;
+}
+.nav i{
+    display: none;
+}
+nav img{
+    width: 250px;
+    height: 150px;
+}
+    
+
+nav-links>ul>li{
+    display: inline-block;
+    list-style: none;
+    padding: 8px 12px;
+    position: relative;
+}
+nav-links>ul>li>a{
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+nav-links>ul>li>a:hover{
+    padding: 2px;
+    text-decoration: underline;
+    text-decoration-color: tomato;
+    text-decoration-thickness: 2px;
+    transition: 0.5s;
+    
+}
+.text-block{
+    width: 90%;
+    color: rgba(228, 20, 20,0.5);
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+.text-block>h1{
+    color: rgba(236, 230, 234);
+    font-size: 62px;
+    
+}
+header >button{
+    text-align: center;
+    margin-top: 375px;
+    margin-left: 580px;
+    padding: 10px;
+    background-color: rgba(43, 43, 184, 0.425);
+    border: 1px solid;
+    cursor: pointer;
+}
+header button a{
+    text-decoration: none;
+    color: white;
+}
+header >button:hover{
+    background-color: tomato;
+    transition: 1s;
+} 
+@media screen and (max-width:360Px){
+   header{
+       width: 360px;
+       
+   }
+    nav img{
+        width: 100px;
+        height: 70px;
+    }
+    .text-block>h1{
+        font-size: 31px;
+    }
+    header >button{
+        margin-left: 110px;
+        margin-top: 300px;
+    }
+    nav-links>ul>li{
+        display: block;
+    }
+    nav-links{
+        position: absolute;
+        top: 0;
+        right: -200px;
+        height: 100vh;
+        width: 200px;
+        background: rgb(138, 12, 37);
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .link i {
+        display: block;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        color: white;
+    }
+    .nav i{
+        display: block;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        color: white;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+products {
+    width: 80%;
+    position: relative;
+    margin-top: 200px;
+    text-align: center;
+    
+}
+products h1{
+    color: sandybrown;
+    text-decoration: underline;
+}
+products p{
+    color: rgb(27, 0, 0, );
+    line-height: 20px;
+    padding: 10px;
+    font-size: 20px;
+}
+.product-description{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.product-description .items{
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 300px;
+    padding: 5px;
+    margin: 5px;
+    background: burlywood;
+    transition: 0.5s;
+}
+.product-description .items:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.4);
+}
+.product-description .items img{
+    width: 250px;
+    height: 200px;
+}
+@media screen and (max-width:600px) {
+    .product-description{
+        flex-direction: column;
+    } 
+}
+
+
+
+
+footer{
+    text-align: center;
+    margin-top: 50px;
+    background-color: blanchedalmond;
+}
+
+footer h{
+     margin-left: 10px;
+     font-style: oblique;
+     text-decoration: underline;
+}
+footer p{
+    color: rgb(27, 0, 0, );
+    line-height: 20px;
+    padding: 10px;
+    font-size: 20px;
+    margin: 10px;
+    overflow-y: hidden;
+ 
+}
+footer p b{
+    color: rgb(29, 31, 180);
+    text-decoration: underline;
+}
+footer p a{
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(172, 75, 75);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    
+}
+footer p a:hover{
+    background-color: white;
+    color: rgb(172, 75, 75);
+}
+footer .comment-box{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px 20px;
+}
+.comment-box h3{
+    text-align: left;
+   
+}
+ .comment-box form input, .comment-box form textarea{
+    width: 100%;
+    background-color: rgba(160, 150, 150, 0.486);
+    margin: 15px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+}
+.comment-box button{
+    background-color: rgb(172, 75, 75);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    padding: 15px;
+}
+.comment-box button:hover{
+    background-color: white;
+    color: rgb(172, 75, 75);
+}
+
+
+footer .icons i{
+    color: rgb(245, 102, 35);
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+footer .icons p{
+    color: rgb(56, 139, 17);
+    font-weight: bold;
+}
+

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <link rel="stylesheet" type="text/css" href="css/project1.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    
+   
+    
+</head>
+<body>
+    <!------------------------- Header ---------------------------------->
+   <header>
+       <nav class="nav">
+           <a href=""><img src="images/IMG-20200707c.jpg"></a>
+           <nav-links class="link" id="navLinks">
+                <i class="fas fa-times-circle" onclick="hideMenu()" ></i>
+                
+                <ul>
+                    <li><a href="project1.html"> HOME</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="Contact_Us.html">Contact Us</a></li>
+                </ul>
+                
+           </nav-links>
+           <i class="fas fa-bars" onclick="showMenu()"></i>
+       </nav>
+       <div class="text-block">
+            <h1>Welcome to  </h1>
+            
+       </div> 
+       <button><a href="Contact_Us.html"> Visit us to know more </a> </button>  
+       
+   </header>
+
+    <!-------------------------Main Content ---------------------------------->  
+
+   <products>
+       <h1>Our Products</h1>
+       <p>We offer variety of products.</p>
+
+       <div class="product-description">
+           <div class="items"> <h3>Magic Stick</h3> <img src="images/Magic stick.jpg"> <br>
+              <p> this is one of the most demanding products of our company.<br>
+                  It comes in two price tags.
+                  <option> ₹2 </option>
+                  <option> ₹5 </option>
+              </p> 
+           </div>
+
+           <div class="items"> <h3>Katori</h3> <img src="images/Katori.jpg"> <br>
+            <p> This has a tangy flavour. This is one of the most demanding products of our company
+                <br>
+                  It comes in two price tags.
+                  <option> ₹2 </option>
+                  <option> ₹5 </option>
+            </p>
+           </div>
+           
+           <div class="items"> <h3>Pasta</h3> <img src="images/pasta.jpg"> <br>
+            <p> This is spiciest products offered by us. This is one of the most demanding products of our company
+                <br>
+                  It comes in two price tags.
+                  <option> ₹2 </option>
+                  <option> ₹5 </option>
+            </p>
+           </div> 
+
+           <div class="items"> <h3>Noodles</h3> <img src="images/Noodles.jpg" > <br>
+            <p> This is spiciest products offered by us. This is one of the most demanding products of our company
+                <br>
+                  It comes in two price tags.
+                  <option> ₹2 </option>
+                  <option> ₹5 </option>
+            </p>
+           </div> 
+       </div>
+
+   </products>
+   <about>
+       
+        
+        
+   </about>
+   <!-------------------------      Footer   ---------------------------------->
+    <footer>
+        <h1>About Us</h1>
+        <p>
+            We have noticed that there are very few local factories in Bihar, 
+            who are producing snacks according to taste of people of Bihar.<br>
+            So,We thought to open a factory  who can produce snacks in Bihar.<br>
+            <b>Our main motive is providing best quality product to our people at affordable price Tag.</b><br>
+           
+          For more details... <br><br>
+          
+            
+                <a href="About.html">
+                    Visit About Page
+                </a>
+            
+        </p>
+        <div class="comment-box">
+            <h3>
+                Write your comments or query here:-
+            </h3>
+            <form id="form">
+                <input type="text" placeholder="Enter name" required>
+                <input type="email" placeholder="Enter email" required>
+                <textarea rows="5"  placeholder="Your comment" required>
+                </textarea>
+                <button type="submit">Post Comment</button>
+            </form>
+           
+        </div>
+        <p>You can follow us at </p>
+        <div  class="icons"> 
+            <i class="fab fa-2x fa-facebook-square"></i>
+            <i class="fab fa-2x fa-instagram" ></i>
+            <i class="fab fa-2x fa-twitter" ></i>
+
+            <p> Copyright@namkinfoods.com </p>
+        </div>
+        
+    </footer>
+   <!------------------------- Js code for menu bar ---------------------------------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+                function showMenu(){
+                    navLinks.style.right = "0";
+                }
+                function hideMenu(){
+                    navLinks.style.right = "-200px";
+                }
+    </script>
+
+</body>
+</html>

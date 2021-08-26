@@ -1,0 +1,56 @@
+main-container,header,footer {
+	border: 1px solid rosybrown;
+	background-color: #fff;
+	position: absolute;
+	left: 5px;
+	right: 5px;
+	padding: 5px;
+	text-align: center;
+}
+main-container{
+	top: 50px;
+	bottom: 50px;
+	    background-image: linear-gradient( rgba(207, 57, 114, 0.7), rgba(19, 59, 219, 0.7)),url('file:///C:/Users/sandip%20raj/Desktop/UI%20classes%20github/Web-Development/Sandip%20Raj/images/Logo.png');
+}
+header{
+	    background-image: linear-gradient(to right bottom, yellow,blue);
+}
+footer{
+    bottom: 5px;
+    padding: 5px;
+    background-image: radial-gradient(yellow,blue);
+}
+
+.category{
+	border: 1px solid;
+	width: 250px;
+	height: auto;
+	display: block;
+	top: 0%;
+}
+.Item{
+	border: 1px solid;
+	width: 400px;
+	height: auto;
+	display: block;
+	float: right;
+	top: 0%;
+}
+.category > section > article{
+	width: 250px;
+	height: 75px;
+	border: 1px solid;
+}
+.Item > section > article{
+	width: 350px;
+	height: 70px;
+	border: 1px solid;
+
+}
+.Item > section{
+	height: 400px;
+	width: auto;
+	overflow-y: scroll;
+}
+
+

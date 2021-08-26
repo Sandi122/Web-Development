@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" href="css/Contact_Us.css">
+    <!--this is essential to link this smtp and jquery cdn link-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!--this is essential to link this smtp and jquery cdn link-->
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a href=""><img src="images/IMG-20200707c.jpg"></a>
+            <nav-links class="link" id="navLinks">
+                 <i class="fas fa-times-circle" onclick="hideMenu()" ></i>
+                 
+                 <ul>
+                     <li><a href="project1.html"> HOME</a></li>
+                     <li><a href="About.html">About Us</a></li>
+                     <li><a href="products.html">Products</a></li>
+                     <li><a href="">Gallery</a></li>
+                     <li><a href="Contact_Us.html">Contact Us</a></li>
+                 </ul>
+                 
+            </nav-links>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-block">
+             <h1> Contact Us </h1>
+             
+             
+        </div>  
+    </header> 
+    <div class="contact-us">
+
+        <div class="Address"> <h3>You can reach us at</h3>
+            <div class="rows">
+                <i class="far fa-2x fa-address-card"></i>
+                <span>
+                    <h5>Plot No.233, Shivaji Path, Gola Road, Rupaspur</h5>
+                    <p>Patna-801503, Bihar, India </p> 
+                </span>
+            </div>
+            <div class="rows">
+                <i class="fas fa-2x fa-mobile-alt"></i>
+                <span>
+                    <h5>+91 8986192095, +91 9546768314</h5>
+                    <p>Monday to Sunday(Open all days of a week), 8AM to 10PM </p>
+                </span>
+            </div>
+            <div class="rows">
+                <i class="fas fa-2x fa-envelope"></i>
+                <span>
+                    <h5>namkinfood@gmail.com</h5>
+                    <p>Email us your query </p>
+                </span>
+            </div>
+        </div>
+       <p class=" "> <h5>Location on Google Map</h5>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1798.8924768859497!2d85.057305469
+                    67114!3d25.612061163901632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed5
+                    75f7f32173d%3A0xca24a2a1183dd084!2sPrinting%20Mall!5e0!3m2!1sen!2sin!4v1629458227205!5m2!1sen!2sin" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+        </p>
+    </div>
+
+    <footer class="footer">
+        <div class="comment-box">
+            <h3>
+                Write your comments or query here:-
+            </h3>
+            <form id="form" method="POST" action="javascript/sendemail()" >
+                <input type="text" id="userName" placeholder="Enter name" required>
+                <input type="email" id="userEmail" placeholder="Enter email" required>
+                <textarea rows="5" id="userComment"  placeholder="Your comment" required>
+                </textarea>
+                <button type="submit" value="register">Post Comment</button>
+            </form>
+           
+        </div>
+      <p>You can follow us at </p>
+      <div  class="icons"> 
+          <i class="fab fa-2x fa-facebook-square"></i>
+          <i class="fab fa-2x fa-instagram" ></i>
+          <i class="fab fa-2x fa-twitter" ></i>
+
+          <p> Copyright@namkinfoods.com </p>
+      </div>
+      
+  </footer>
+ <!------------------------- Js code for menu bar ---------------------------------->
+
+  <script>
+      var navLinks = document.getElementById("navLinks");
+
+              function showMenu(){
+                  navLinks.style.right = "0";
+              }
+              function hideMenu(){
+                  navLinks.style.right = "-200px";
+              }
+// ----------------------------code for comment box -------------------------------------- //
+
+              function sendemail() {
+            var name = $('#userName').val();
+            var email = $('#userEmail').val();
+            var message = $('#userComment').val();
+    
+            var Body = 'userName: ' + name + '<br>userEmail: ' + email + '<br>userComment: ' + message;
+            Email.send({
+                SecureToken: "Your SecureToken",
+                To: 'singhsandip712@gmail.com',
+                From: "youremai@gmail.com",
+                Subject: "New message on contact us form ",
+                Body : Body
+            }).then(
+                message => {
+                    //console.log (message);
+                    if (message == 'OK') {
+                        window.location.replace("thankyou.html")
+                    }
+                    else {
+                        console.error(message);
+                        window.location.replace("error.html")
+                    }
+                }
+            );
+        }
+  </script>
+  
+</body>
+</html>

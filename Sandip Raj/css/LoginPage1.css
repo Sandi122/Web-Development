@@ -7,7 +7,7 @@
                left: 35%;
                border: 10px;
                padding: 40px;	
-               background: linear-gradient(white, blue);
+               background-image: linear-gradient(white, blue);
 
           }
 
