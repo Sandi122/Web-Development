@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@keyframes dark{
+    0%{
+        transform: translateY(-80px);
+        opacity: 0;
+    }
+    50%{
+        transform: none;
+        opacity: 0.5;
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+header{
+    background-color: burlywood;
+    position: relative;
+    height: 80px;
+    animation: dark 5s;
+}
+@keyframes main{
+    0%{
+        transform: translateX(-600px);
+        
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(none);
+        
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateX(none);
+      
+        opacity: 1;
+    }
+}
+footer{
+    width: 100%;
+    height: 30px;
+    bottom: 0%;
+    background-color: burlywood;
+    position: relative;
+    text-align: center;
+}
+.option .menu{
+    width: 28px;
+    height: 20px;
+   margin-left: 10px;
+   display: none;
+}
+.content{
+    width: 100%;
+    height: 480px;
+    background: url('file:///C:/Users/sandip%20raj/Desktop/UI%20classes%20github/Web-Development/Sandip%20Raj/Restaurant/HomePic.jpg');
+    background-size: cover;
+    
+}
+
+.content .Reservation{
+    background-color: white;
+    width: 600px;
+    height: 300px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    transition: 60s;
+    animation: main 5s;
+   
+}
+.content .Reservation img{
+    width: 300px;
+    height: 300px;
+}
+.content .Reservation p{
+   
+    width: 250px;
+    height: auto;
+    padding: 10px;
+}
+.content .Reservation p input{
+    background-color: rgb(233, 120, 14);
+    color: white;
+    width: 120px;
+    height: 45px;
+    margin-top: 35px;
+    margin-left: 25px;
+    border-radius: 20px;
+     
+}
+.content .Reservation p input:hover{
+    background-color: rgb(22, 140, 209);
+    color:rgb(233, 120, 14) ;
+    transition: 1s; 
+   
+}
+@media  screen and (max-width:360px) {
+    header, footer{
+        width: 360px;  
+        animation: none;
+    }
+    .option{
+        display: block;
+    }
+    .nav-tabs{
+        display: block;
+       position: absolute;
+       width: 200px;
+       height: 450px;
+       background: violet;
+       margin-top: 10px;
+       z-index: 2;
+       overflow: hidden;
+       transition:  0.5s;
+    }
+    .option .menu{
+        margin-top: 10px;
+        display: block;
+    }
+    /*  -------------------mrdia query for page----------------------------------------*/
+    .content{
+        height: 370px;
+       
+    }
+    .content .Reservation{
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        height: 350px;
+        margin-left: 30px;
+        
+    }
+    .content .Reservation img{
+        width: 200px;
+        height: 150px;
+       
+    }
+    .content .Reservation p{
+   
+        width: 250px;
+        height: auto;
+        padding: 5px;
+    }
+    .content .Reservation p input{
+        background-color: rgb(233, 120, 14);
+        color: white;
+        width: 120px;
+        height: 45px;
+        margin-top: 15px;
+        margin-left: 35px;
+        border-radius: 20px;
+         
+    }
+}

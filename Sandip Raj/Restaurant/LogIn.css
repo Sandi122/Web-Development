@@ -1,0 +1,153 @@
+body {
+    background: linear-gradient(to right,rgba(0, 0, 255, 0.603), silver);
+   
+}
+header{
+    background-color: burlywood;
+    position: relative;
+    height: 80px;
+    animation: dark 5s;
+}
+.container{
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    top: 30%;
+    left: 35%;
+    padding: 15px;
+    background: linear-gradient(to right bottom,silver, blue);
+    border-radius: 10px;
+}
+.container input{
+    width: 300px;
+    height: 40px;
+    border-radius: 24px;
+    margin: 5px;
+    text-align: center;
+    border: 1px solid;
+}
+button{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(243, 109, 13);
+    color: rgba(255, 255, 255, 0.699);
+    margin: 15px;
+    margin-left: 120px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 1s;
+}
+button:hover{
+    transform: scale(1.2,1.2);
+    background: rgb(97, 88, 88);
+    color: tomato;
+}
+a{
+    color: rgba(255, 68, 0, 0.726);
+}
+a:hover{
+    color: violet;
+}
+
+.nav-tabs a{
+    color: rgb(218, 26, 26);
+}
+
+.option .menu{
+    width: 28px;
+    height: 20px;
+   margin-left: 10px;
+   display: none;
+}
+
+footer{
+    bottom: 0%;
+    background-color: burlywood;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+@media screen and (max-width:360Px){
+    header, footer{
+        width: 360px;  
+    } 
+    .container{
+        position: absolute;
+        width: 350px;
+        height: 300px;
+        top: 30%;
+        left: 2%;
+        padding: 15px;
+        
+    }
+    .option{
+        display: block;
+    }
+    .nav-tabs{
+        display: block;
+       position: absolute;
+       width: 200px;
+       height: 450px;
+       background: violet;
+       margin-top: 10px;
+       z-index: 2;
+       overflow: hidden;
+       transition:  0.5s;
+    }
+    .option .menu{
+        margin-top: 10px;
+        display: block;
+    }
+
+}
+
+/*  ---------------------------css for SignUp page--------------------------------------- */
+
+
+
+.signUp{
+    width: 100%;
+    background: radial-gradient(blue,white);
+    position: relative;
+    height: 83vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form{
+    width: 90%;
+    max-width: 400px;
+} 
+.signUp form .details{
+    margin-bottom: 18px;
+    position: relative;
+}
+.signUp form .details input{
+   width: 100%;
+   padding: 10px;
+   border-radius: 15px;
+   position: relative;
+   outline: 0;
+   background: transparent;
+   color: white;
+} 
+
+ @media screen and (max-width:360Px) {
+    .signUp form .details{
+        margin-bottom: 0px;
+        
+    }
+    .signUp form .details input{
+        width: 100%;
+        padding: 5px;
+        border-radius: 10px;
+        
+     } h3{
+         font-size: 15px;
+     }
+     
+    
+
+}
