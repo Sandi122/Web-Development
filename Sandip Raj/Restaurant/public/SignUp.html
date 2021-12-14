@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="LogIn.css">
-    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <script src="https://kit.fontawesome.com/170a105b56.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav>
          <ul class="nav justify-content-end">
              <li class="nav-item"> 
-               <a class="nav-link active" aria-current="page" href="file:///C:/Users/sandip%20raj/Desktop/UI%20classes%20github/Web-Development/Sandip%20Raj/Restaurant/LogIn.html#">
+               <a class="nav-link active" aria-current="page" href="file:///C:/Users/sandip%20raj/Desktop/UI%20classes%20github/Web-Development/Sandip%20Raj/Restaurant/public/LogIn.html#">
                    Log In</a>
              </li>
              <li class="nav-item">
-               <a class="nav-link" href="file:///C:/Users/sandip%20raj/Desktop/UI%20classes%20github/Web-Development/Sandip%20Raj/Restaurant/SignUp.html#">
+               <a class="nav-link" href="file:///C:/Users/sandip%20raj/Desktop/UI%20classes%20github/Web-Development/Sandip%20Raj/Restaurant/public/SignUp.html#">
                 Sign Up</a>
              </li>
              <li class="nav-item">
@@ -31,12 +31,12 @@
             
         </nav>
         <div class="option">
-            <img src="menu-icon.png" class="menu" onclick="menuToggle()" >  
+            <img src="menu-icon.png" class="menu" onclick="menuToggle()" >
 
          <ul class="nav nav-tabs" id="MenuItems">
              <li class="nav-item">
                <a class="nav-link" aria-current="page"
-                href="file:///C:/Users/sandip%20raj/Desktop/UI%20classes%20github/Web-Development/Sandip%20Raj/Restaurant/Restaurant.html#">
+                href="file:///C:/Users/sandip%20raj/Desktop/UI%20classes%20github/Web-Development/Sandip%20Raj/Restaurant/public/Restaurant.html#">
                 Home</a>
              </li>
  
@@ -54,10 +54,8 @@
                  <li><a class="dropdown-item" href="#">Fast-food</a></li>
  
                </ul>
-             </li>
-               
  
-             <li class="nav-item dropdown">
+               <li class="nav-item dropdown">
                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Recipes</a>
                  <ul class="dropdown-menu">
                    <li><a class="dropdown-item" href="#">Chicken Curry</a></li>
@@ -80,56 +78,64 @@
                </li>
              
            </ul>
-           
-
-           
         </div>
      </header>
-	
-	<div class="container"> 
-		<h2>Login Here</h2>
-		<div>
-				<input type = "text" id="Username" placeholder="Email address or Phone number" >
-		</div>
-		<div>				
-			<input type = "text" id="Password" placeholder="Password" >
-		</div>
-		<button type="submit" onclick="validate()">Log In</button>
-		<div>
-		  <a href="">
-			Forgot Password </a>
-		</div>
-		<div>Not a Member?
-		  <a href="">
-			 SignUp now </a>
-		</div>
-	</div>
-    <footer>
+     
+
+     <div class="signUp"> 
+         <form >
+            <h3>Create new account </h3>
+         <div class="details">
+          <label for=" Name"><i class="fas fa-user"></i>Your Name:-</label>
+          <input type="text" id="Name" required>
+         </div>
+         <div class="details">
+            <label for=" Email"><i class="fas fa-envelope-square"></i>Your Email:-</label>
+            <input type="text" id="Email" required>
+           </div>
+           <div class="details">
+            <label for=" Mobile"><i class="fas fa-mobile"></i>Your Mobile No.</label>
+            <input type="text" id="Mobile" required>
+           </div>
+           <div class="details">
+            <label for=" Password"><i class="fas fa-lock"></i>Password:-</label>   
+            <input type="text" id="Password" required>
+           </div>           
+           <div class="date"> Date of Birth:-
+           <input type="date" >
+           </div>
+           <button onclick="readUserInfo"> Sign Up</button>
+
+        </form>
+     </div>
+
+
+
+     <footer>
         Copyright@ Sandip Raj
      </footer>
     
-
 
      <!---                                   js for toggle menu                  -->
 
 
      <script>
-         var MenuItems = document.getElementById("MenuItems");
+        var MenuItems = document.getElementById("MenuItems");
 
-         MenuItems.style.maxHeight = "0px";
+        MenuItems.style.maxHeight = "0px";
 
-         function menuToggle(){
-             if( MenuItems.style.maxHeight == "0px")
-             {
-                MenuItems.style.maxHeight = "200px";
-             }
-             else
-             {
-                MenuItems.style.maxHeight = "0px";
-             }
-         }
+        function menuToggle(){
+            if( MenuItems.style.maxHeight == "0px")
+            {
+               MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+               MenuItems.style.maxHeight = "0px";
+            }
+        }
 
 
-     </script>
+    </script>
 </body>
 </html>
