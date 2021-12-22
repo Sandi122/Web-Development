@@ -1,0 +1,112 @@
+*{
+    margin: 0%;
+    padding: 0;
+    background-color:rgba(227, 243, 191, 0.8);
+}
+main h3{
+    text-align: center;
+    text-decoration: underline rgb(240, 112, 112);
+    padding: 30px;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(231, 58, 58);
+}
+main img{
+    border-radius: 20px;
+}
+.Intro{
+    display: flex;
+    justify-content: space-between;
+    margin: 35px;
+}
+.Intro p{
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 40px;
+}
+.Intro .name{
+    padding-left: 45px;
+
+}
+button{
+    width: 200px;
+    height: 75px;
+    border-radius: 25px;
+    font-size: 20px;
+    background-color: rgb(75, 172, 83);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    text-align: center;
+    margin-left:530px;
+    margin-bottom: 50px;
+}
+.About h1{
+    font-style: oblique;
+    color: rgb(231, 31, 31);
+    font-size: 40px;
+    text-decoration: underline rgb(230, 148, 148);
+    padding-left: 15px;
+}
+.About p{
+    font-size: 20px;
+    padding: 15px;
+}
+.Academic h3{
+    font-style: oblique;
+    color: rgb(76, 226, 17);
+    font-size: 40px;
+    text-decoration: underline rgb(138, 196, 115);
+    padding-left: 15px;
+}
+.Academic p{
+    font-size: 20px;
+    padding: 15px;
+}
+.project{
+    display: block;
+    padding: 15px;
+}
+.project h1{
+    font-style: oblique;
+    color: rgb(224, 17, 190);
+    font-size: 40px;
+    text-decoration: underline rgba(227, 148, 230, 0.555);
+}
+
+.project p{
+    font-size: 20px;
+}
+.project img{
+    width: 100px;
+    height: 60px; 
+    margin-bottom: 20px;
+}
+.project div{
+    font-size: 20px;
+}
+.contact{
+    display: block;
+    padding: 15px;
+}
+.contact h3{
+    font-style: oblique;
+    color: rgb(14, 28, 221);
+    font-size: 40px;
+    text-decoration: underline rgba(42, 65, 167, 0.555);
+}
+.contact p{
+ font-size: 25px;
+ margin: 20px;
+}
+.contact img{
+    width: 50px;
+    height: 40px;
+}
+.contact .address{
+    display: flex;
+    justify-content: center;
+}
+.contact .address a{
+    margin: 20px;
+}
